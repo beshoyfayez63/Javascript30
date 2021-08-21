@@ -1,0 +1,39 @@
+body {
+  background-color: rgba(0, 0, 0, 0.5);
+  font-family: sans-serif;
+}
+.keys {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.key {
+  border: 4px solid black;
+  margin: 1rem;
+  padding: 1rem 0.5rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  transition: 0.2s;
+}
+
+kbd {
+  font-size: 40px;
+}
+
+.playing {
+  transform: translate(1.1);
+  border-color: #ffc600;
+}
+
+.sound {
+  color: #ffc600;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
