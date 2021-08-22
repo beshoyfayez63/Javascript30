@@ -3,7 +3,7 @@ const canvas = document.querySelector('#draw');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 const ctx = canvas.getContext('2d');
-console.log(ctx);
+console.dir(ctx);
 ctx.strokeStyle = '#BADA55';
 // ctx.lineJoin = 'round';
 ctx.lineCap = 'round';

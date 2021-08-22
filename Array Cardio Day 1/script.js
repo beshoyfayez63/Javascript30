@@ -142,3 +142,9 @@ let newArray = [
   { name: 'Beshoy', age: 27 },
   { name: 'Beshoy', age: 26 },
 ];
+console.clear();
+inventors.forEach((inv) => {
+  console.groupCollapsed(`${inv.first}`);
+  console.log(inv);
+  console.groupEnd(`${inv.first}`);
+});
