@@ -35,4 +35,12 @@ const newBandsSorted = bands.sort((bandA, bandB) => {
   return strip(bandA).localeCompare(strip(bandB));
 });
 
+document.querySelector('#bands').innerHTML = newBandsSorted
+  .map((band) => {
+    return `
+    <li>${band}</li>
+  `;
+  })
+  .join('');
+
 console.table(newBandsSorted);
