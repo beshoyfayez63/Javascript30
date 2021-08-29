@@ -6,5 +6,5 @@ function logText(e) {
 }
 
 divs.forEach((div) => {
-  div.addEventListener('click', logText);
+  div.addEventListener('click', logText, { capture: true, once: true });
 });
